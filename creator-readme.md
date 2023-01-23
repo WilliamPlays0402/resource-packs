@@ -14,7 +14,8 @@
 4. Now you can edit the textures in your own texture pack and use them in Minecraft.
 
 > Example of instructions:
-```What texture would you like to modify? (x to eXit) Choices: [B]lock, [I]tem, [E]ntity, [A]rmor. Just write the capital letter of the option you want. b
+```
+What texture would you like to modify? (x to eXit) Choices: [B]lock, [I]tem, [E]ntity, [A]rmor. Just write the capital letter of the option you want. b
 What block would you like to modify? (grass_block/x to eXit) grass_block
 File grass_block_side.png exists. Copying...
 File grass_block_side_overlay.png exists. Copying...
