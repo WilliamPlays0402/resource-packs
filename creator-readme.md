@@ -9,12 +9,11 @@
 
 ## Usage
 1. Run creator.js by running ```node creator.js``` in the command prompt. If you get an error, make sure you have installed NodeJS correctly.
-2. Follow the instructions in the command prompt. [^1]
+2. Follow the instructions in the command prompt.
 3. This will create a folder called `output` in the same folder as creator.js. This folder will contain a folder called `assets`, which you can copy over to your texture pack.
 4. Now you can edit the textures in your own texture pack and use them in Minecraft.
 
-[^1]: Example:
-
+> Example of instructions:
 ```What texture would you like to modify? (x to eXit) Choices: [B]lock, [I]tem, [E]ntity, [A]rmor. Just write the capital letter of the option you want. b
 What block would you like to modify? (grass_block/x to eXit) grass_block
 File grass_block_side.png exists. Copying...
