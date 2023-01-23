@@ -45,17 +45,31 @@ function stage(type, structure, example) {
     }
     // if there is a $s in the structure, replace it with the answer
     if (structure.includes('$s')) {
+      noS = structure.replace('$s', '');
       structure = structure.replace('$s', answer);
     }
     // first make sure to make the folders
     fs.mkdirSync('./output/'+structure, { recursive: true });
     // check if file exists
-    fs.readdirSync('./template/'+structure).forEach(file => {
-      if (file.includes(answer)) {
-        console.log('File '+file+' exists. Copying...');
-        fs.copyFileSync('./template/'+structure+file, './output/'+structure+file);
-      }
-    });
+    try {
+      fs.readdirSync('./template/'+structure).forEach(file => {
+        if (file.includes(answer)) {
+          console.log('File '+file+' exists. Copying...');
+          fs.copyFileSync('./template/'+structure+file, './output/'+structure+file);
+        }
+      })
+    } catch (err) {
+      // if the file doesn't exist, try without the $s
+      // this is for entities (such as trident, which is trident.png, not trident/trident.png)
+      
+      // check if file exists
+      fs.readdirSync('./template/'+noS).forEach(file => {
+        if (file.includes(answer)) {
+          console.log('File '+file+' exists. Copying...');
+          fs.copyFileSync('./template/'+noS+file, './output/'+noS+file);
+        }
+      })
+    }
   });
 }
 
