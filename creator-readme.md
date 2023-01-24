@@ -2,7 +2,7 @@
 **Is a nodejs program that allows you to easily get the correct textures for resource packs!**
 
 ## Installation
-1. Download latest version of creator.js from the source code [here](creator.js).
+1. Download latest version of creator.js from the source code [here](https://raw.githubusercontent.com/WilliamPlays0402/resource-packs/main/creator.js).
 2. Download latest version of template.zip from the source code [here](template.zip).
 3. Install NodeJS from [here (https://nodejs.org/en/download)](https://nodejs.org/en/download/). Make sure to install the LTS version and to restart your computer after installing.
 4. Extract template.zip and make sure to put the folder inside called `template` in the same folder as creator.js.
